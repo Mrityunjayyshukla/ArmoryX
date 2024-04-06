@@ -1,0 +1,80 @@
+body{
+    background:url("log-back.jpg") no-repeat fixed center;
+    background-size:1550px 750px;
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height:450px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    opacity:0.8;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+
+.login-box .user-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.login-box form{
+    text-align:center;
+    padding:40px;
+
+}
+.login-box .user-box input {
+    width:100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(0, 238, 255);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+label{
+    color:black;
+}
+.login-box.user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition:.5s ease;
+}
+
+.login-box.user-box input:focus ~ label,
+.login-box.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.login-box button[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    background: #00f2ff;
+    opacity:1;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
